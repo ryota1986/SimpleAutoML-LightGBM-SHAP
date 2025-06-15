@@ -1,0 +1,12 @@
+lightgbm
+numpy
+pandas
+plotly
+streamlit
+scipy
+scikit-learn
+shap
+openai
+charset-normalizer
+chardet
+
