@@ -1,34 +1,34 @@
 # SimpleAutoML
 
-SimpleAutoML は、アップロードした CSV ファイルから自動的に LightGBM モデルを学習する軽量な Streamlit アプリケーションです。回帰と分類の両タスクをサポートし、基本的なハイパーパラメータ探索や SHAP を用いたモデル解釈機能を備えています。時系列モードを有効にすると、ターゲット列を数行先まで予測できます。
+SimpleAutoML is a lightweight Streamlit application that automatically trains a LightGBM model from an uploaded CSV file. It supports both regression and classification tasks, provides basic hyperparameter search and SHAP-based model interpretation. When time-series mode is enabled, the app can shift the target column to predict several steps ahead.
 
-## 特徴
+## Features
 
-- CSV をアップロードするだけでタスク（回帰／分類）を自動判別
-- ターゲット列をシフトして時系列予測が可能
-- `RandomizedSearchCV` によるハイパーパラメータチューニング
-- SHAP によるモデル解釈
-- OpenAI API を利用した AI 生成の説明（任意）
-- 学習済みモデルと最適なハイパーパラメータをダウンロード可能
+- Automatically detects whether the task is regression or classification
+- Allows shifting the target column for time-series prediction
+- Hyperparameter tuning via `RandomizedSearchCV`
+- SHAP-based model interpretation
+- Optional explanation generation using the OpenAI API
+- Downloadable trained model and best hyperparameters
 
-## 必要なライブラリ
+## Requirements
 
-以下のコマンドで依存ライブラリをインストールします。
+Install the required libraries with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 使い方
+## Usage
 
-以下のコマンドで Streamlit アプリを起動します。
+Run the Streamlit app with:
 
 ```bash
 streamlit run AutoML0.py
 ```
 
-データセットをアップロードし、ターゲット列や各種オプションを指定してください。OpenAI API キーを入力すると、SHAP 出力の簡単な説明を生成できます。
+Upload your dataset, select the target column and configure any options. If you supply an OpenAI API key, the app can generate a short explanation of the SHAP output.
 
-## ライセンス
+## License
 
-このプロジェクトは MIT License の下で公開されています。詳細は [LICENSE](LICENSE) を参照してください。
+This project is released under the MIT License. See [LICENSE](LICENSE) for details.
