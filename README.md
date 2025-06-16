@@ -1,4 +1,4 @@
-# SimpleAutoML
+# SimpleAutoML-LightGBM-SHAP
 
 SimpleAutoML は、アップロードした CSV ファイルから自動的に LightGBM モデルを学習する軽量な Streamlit アプリケーションです。回帰と分類の両タスクをサポートし、基本的なハイパーパラメータ探索や SHAP を用いたモデル解釈機能を備えています。時系列モードを有効にすると、ターゲット列を数行先まで予測できます。
 
